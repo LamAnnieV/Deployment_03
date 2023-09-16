@@ -1,4 +1,4 @@
-# Run a Jenkins Build and Manually Deploy a URL Shortner to Elastic Beanstalk
+# Automate Build, Test and Deploy URL Shortener Application in Stages
 
 September 15, 2023
 
@@ -6,11 +6,11 @@ By:  Annie V Lam - Kura Labs
 
 # Purpose
 
-Automate the Build, Test, and Deploy stages.
+Automate Build, Test and Deploy URL Shortener Application in Stages
 
-Previously, the URL Shortener was manually deployed using AWS Elastic Beanstack.  This deployment, AWS Beanstalk CLI and GitHub Webhook is used to automate the Build, Test and Deployment of the URL Shortner.
+Previously, the URL Shortener was manually deployed using AWS Elastic Beanstack.  This deployment, AWS Beanstalk CLI is used to automate the Deploy Stage and and GitHub Webhook is fully automate Jenkins "Run Build".
 
-## Step #1 Map out the Deployment
+## Step #1 Map Out the Deployment
 
 [Deployment Flowchart](Images/Deployment_Pipeline.png)
 
