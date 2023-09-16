@@ -40,25 +40,23 @@ Github is the repository where Jenkins retrieve the files to build, test, and de
 
 [Create Jenkins Multibranch Pipeline Build](https://github.com/LamAnnieV/Jenkins/blob/main/Jenkins_Multibranch_Pipeline_Build.md)
 
-### Result:  Build and Test was successful
+### Result:  Build and Test was successful, see run #1
 
 ![Jenkins Successful Build: See Run #1](Images/Jenkins_Success.png)
 
 ## Step #3B AWS EB CLI
 
-[Create a New Instance](https://github.com/LamAnnieV/Setup_AWS/blob/main/Generate_AWS_CLI_Credentials.md)
+[Generate AWS CLI Credentials](https://github.com/LamAnnieV/Setup_AWS/blob/main/Generate_AWS_CLI_Credentials.md)
 
-[Install CLI](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
+[Script to Install CLI](https://github.com/LamAnnieV/Instance_Installs/blob/ec378d89c22c95a909cb1283516e633ab6c9b153/03_CLI_installs.sh)
 
-[Install AWS EB CLI Part I](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
+[Script to Install AWS EB CLI Part I](https://github.com/LamAnnieV/Instance_Installs/blob/main/04A_AWS_EB_CLI_install.sh)
 
-[Install AWS EB CLI Part II](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
+[Scropt to Install AWS EB CLI Part II](https://github.com/LamAnnieV/Instance_Installs/blob/main/04B_AWS_EB_CLI_install.sh)
 
-### Results
+### Result:  Build and Test was successful, see run #3
 
-****Successful Build:****
-
-![Jenkins Successful Build](Images/Jenkins_Success.png)
+![Jenkins Successful Build: See Run #1](Images/Jenkins_Success.png)
 
 
 ## Step #3C Webhook
