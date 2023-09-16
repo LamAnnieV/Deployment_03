@@ -30,18 +30,25 @@ In Jenkins create a build "Deployment02" for the URL Shortner application from G
 
 ### INSTRUCTIONS for new INSTALLS and setup
 [Create a New Instance](https://github.com/LamAnnieV/Setup_AWS/blob/main/Generate_AWS_CLI_Credentials.md)
+
 [Generate AWS Access Key and Secret](https://github.com/LamAnnieV/Setup_AWS/blob/main/Generate_AWS_CLI_Credentials.md)
+
 [Create IAM Roles for Elastic Beanstalk and EC2](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
 
 ### INSTRUCTIONS for INSTALLS in the Instance
 [Install Jenkins](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
+
 [Install "python3.10-venv", "python-pip", "python3-pip" and "unzip"](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
+
 [Install CLI](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
+
 [Install AWS EB CLI Part I](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
+
 [Install AWS EB CLI Part II](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
 
 ### INSTRUCTIONS for Jenkins Setup
 [Jenkins Setup](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
+
 [Install "Pipeline Utility Step" Plugin](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
 
 ### Results
