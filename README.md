@@ -22,23 +22,21 @@ Github is the repository where Jenkins retrieve the files to build, test, and de
 
 ## Step #3A Jenkins
 
-**Instructions to SETUP a New EC2 Instance**
+**Instructions to Setup a New EC2 Instance**
 
-[Generate AWS Access Key and Secret](https://github.com/LamAnnieV/Setup_AWS/blob/main/Generate_AWS_CLI_Credentials.md)
+[Create EC2 Instance](https://github.com/LamAnnieV/Create_EC2_Instance/blob/main/Create_EC2_Instance.md)
 
 [Create IAM Roles for Elastic Beanstalk and EC2](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
 
-**Shell Scripts for INSTALLS in the Instance**
+**Shell Scripts for Install(s) in the Instance**
 
-[Install Jenkins](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
+[Install "python3.10-venv", "python-pip", "python3-pip" and "unzip"](https://github.com/LamAnnieV/Instance_Installs/blob/main/02_other_installs.sh)
 
-[Install "python3.10-venv", "python-pip", "python3-pip" and "unzip"](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
+**Instructions for Jenkins Setup, Install Plugin(s) and Create Build**
 
-**Instructions for Jenkins Setup**
+[Jenkins Setup](https://github.com/LamAnnieV/Instance_Installs/blob/main/01_jenkins_installs.sh)
 
-[Jenkins Setup](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
-
-[Install "Pipeline Utility Step" Plugin](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
+[Install "Pipeline Utility Step" Plugin](https://github.com/LamAnnieV/Jenkins/blob/main/Install_Pipeline_Utility_Step_Plugin.md)
 
 ### Results
 
