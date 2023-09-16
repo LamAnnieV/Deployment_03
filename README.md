@@ -66,6 +66,9 @@ The Jenkins file was edited to include a Deploy stage.
 
 ![Jenkins Successful Build: See Run #1](Images/Jenkins_Success.png)
 
+### URL Shortener Deployed
+
+![URL Shortener](Images/URL_Shortener.png)
 
 ## Step #3C Webhook
 
