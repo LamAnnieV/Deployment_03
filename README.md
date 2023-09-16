@@ -28,6 +28,8 @@ Jenkins is used to automate the Build, Test, and Zipping of the Application file
 
 In Jenkins create a build "Deployment02" for the URL Shortner application from GitHub Repository https://github.com/LamAnnieV/Run_Jenkins_Build_and_Deploy_to_EB_Deployment02.git and run the build
 
+###[Gnerate AWS Access Key and Secret](Generate_AWS_CLI_Credentials.md)
+
 ### INSTRUCTIONS for INSTALLS for the Staging server ran on Ubuntu OS in AWS
 
 ### BASH commands to install JAVA pacakage(s):
