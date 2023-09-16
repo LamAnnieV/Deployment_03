@@ -50,6 +50,10 @@ In Jenkins create a build "Deployment_03" for the URL Shortner application from 
 
 ## Step #3B AWS EB CLI
 
+In Deployment #2, the URL Shortener was manually deployed via AWS Elastic Beanstalk.  In this deployment, AWS CLI and AWS EB CLI was installed to automate the deployment of the URL Shortner.
+
+The Jenkins file was edited to include a Deploy stage.
+
 [Generate AWS CLI Credentials](https://github.com/LamAnnieV/Setup_AWS/blob/main/Generate_AWS_CLI_Credentials.md)
 
 [Script to Install CLI](https://github.com/LamAnnieV/Instance_Installs/blob/ec378d89c22c95a909cb1283516e633ab6c9b153/03_CLI_installs.sh)
