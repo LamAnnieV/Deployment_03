@@ -66,7 +66,11 @@ The Jenkins file was edited to include a Deploy stage.
 
 ![Jenkins Successful Build: See Run #1](Images/Jenkins_Success.png)
 
-### Lanch URL Shortener Website
+### After installing the AWS EB CLI the application URL was displayed:
+
+![Application URL](Images/Where the appliation will be available.png)
+
+### Launch URL Shortener Website
 
 ![URL Shortener](Images/URL_Shortener.png)
 
@@ -74,17 +78,17 @@ The Jenkins file was edited to include a Deploy stage.
 
 In step #3A and #3B, when there is commit in GitHub, the "Run Build" still needs to be manually ran.  To automate this process, a GitHub Webhook was configured.  When there is a commit in the GitHub Repository, it pushes it to Jenkins in this case and automatically runs the Build.
 
-[Congigure GitHub Webhook](https://github.com/LamAnnieV/GitHub/blob/main/Configure_GitHub_Webhook.md)
+To test the webhook, the file https://github.com/LamAnnieV/Deployment_03/blob/main/templates/base.html was edited to change "URL Shortner" to "URL Shrinker"
 
-### Result:  Build and Test was successful, see run #3
+[Configure GitHub Webhook](https://github.com/LamAnnieV/GitHub/blob/main/Configure_GitHub_Webhook.md)
+
+### Result:  Build and Test was successful, see run #4
 
 ![Jenkins Successful Build: See Run #1](Images/Jenkins_Success.png)
 
-### Lanch URL Shortener Website
+### Launch URL Shortener Website
 
-![URL Shortener](Images/URL_Shortener.png)
-
-
+![URL Shortener](Images/Tested_Webhook.png)
             
 ## Areas for Optimization
 -     Automate installs for Virtual Machines
