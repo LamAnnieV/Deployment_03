@@ -89,8 +89,12 @@ To test the webhook, the file https://github.com/LamAnnieV/Deployment_03/blob/ma
 ### Launch URL Shortener Website
 
 ![URL Shortener](Images/Tested_Webhook.png)
+
+## Issue(s): 
+
+There were issues fully installing the ADW EB CLI since it needed Python3-pip.  In this case in order to successfully install ADW EB CLI, Python3-pip needed to be installed beforehand.
             
-## Areas for Optimization
+## Area(s) for Optimization:
 
 -     Furthur automate the installs to minimize manual input/entries
   
