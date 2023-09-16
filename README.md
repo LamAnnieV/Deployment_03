@@ -22,15 +22,8 @@ Github is the repository where Jenkins retrieve the files to build and test the 
 
 -     GitHub/Profile/Settings/Left Panel all the way on the bottom:  Developer Settings/Personal Access Tokens/Tokens (classic)/Generate New Token/Generate New Token (Claissic)/{Note:  Enter a note}/Check: Repo &  Admin:Repor_hook/Generate Token
 
-## Step #3 and Step #4:  Use Jenkins to Auto Build and Auto Test Application
-
-Jenkins is used to automate the Build, Test, and Zipping of the Application files that are need in the deployment stage.  To use Jenkins in a new EC2, all the proper installs to use Jenkins and to read the programing lanuague that the application is written in needs to be installed. In this case, they are Jenkins, Java, Python, and Jenkins additional plugin "Pipeline Utility Steps".
-
-In Jenkins create a build "Deployment02" for the URL Shortner application from GitHub Repository https://github.com/LamAnnieV/Run_Jenkins_Build_and_Deploy_to_EB_Deployment02.git and run the build
-
+## Step #3A Jenkins
 ### INSTRUCTIONS to SETUP a New EC2 Instance
-[Create a New Instance](https://github.com/LamAnnieV/Setup_AWS/blob/main/Generate_AWS_CLI_Credentials.md)
-
 [Generate AWS Access Key and Secret](https://github.com/LamAnnieV/Setup_AWS/blob/main/Generate_AWS_CLI_Credentials.md)
 
 [Create IAM Roles for Elastic Beanstalk and EC2](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
@@ -40,16 +33,37 @@ In Jenkins create a build "Deployment02" for the URL Shortner application from G
 
 [Install "python3.10-venv", "python-pip", "python3-pip" and "unzip"](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
 
+### INSTRUCTIONS for Jenkins Setup
+[Jenkins Setup](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
+
+[Install "Pipeline Utility Step" Plugin](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
+
+
+## Step #3B AWS EB CLI
+[Create a New Instance](https://github.com/LamAnnieV/Setup_AWS/blob/main/Generate_AWS_CLI_Credentials.md)
+
 [Install CLI](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
 
 [Install AWS EB CLI Part I](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
 
 [Install AWS EB CLI Part II](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
 
-### INSTRUCTIONS for Jenkins Setup
-[Jenkins Setup](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
 
-[Install "Pipeline Utility Step" Plugin](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
+
+## Step #3C Webhook
+
+
+and Step #4:  Use Jenkins to Auto Build and Auto Test Application
+
+Jenkins is used to automate the Build, Test, and Zipping of the Application files that are need in the deployment stage.  To use Jenkins in a new EC2, all the proper installs to use Jenkins and to read the programing lanuague that the application is written in needs to be installed. In this case, they are Jenkins, Java, Python, and Jenkins additional plugin "Pipeline Utility Steps".
+
+In Jenkins create a build "Deployment02" for the URL Shortner application from GitHub Repository https://github.com/LamAnnieV/Run_Jenkins_Build_and_Deploy_to_EB_Deployment02.git and run the build
+
+
+
+
+
+
 
 ### Results
 
