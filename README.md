@@ -49,10 +49,26 @@ Github is the repository where Jenkins retrieve the files to build and test the 
 
 [Install AWS EB CLI Part II](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
 
+### Results
+
+****Successful Build:****
+
+![Jenkins Successful Build](Images/Jenkins_Success.png)
 
 
 ## Step #3C Webhook
 
+[Install GitHub Webhook](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
+
+### Results
+
+****Successful Build:****
+
+![Jenkins Successful Build](Images/Jenkins_Success.png)
+
+****Successful Build:****
+
+![Jenkins Successful Build](Images/Jenkins_Success.png)
 
 and Step #4:  Use Jenkins to Auto Build and Auto Test Application
 
@@ -61,37 +77,6 @@ Jenkins is used to automate the Build, Test, and Zipping of the Application file
 In Jenkins create a build "Deployment02" for the URL Shortner application from GitHub Repository https://github.com/LamAnnieV/Run_Jenkins_Build_and_Deploy_to_EB_Deployment02.git and run the build
 
 
-
-
-
-
-
-### Results
-
-****The Build Stage was Successful, but not the Test Stage****
-
-![Jenkins Unsuccessful Build](Images/Jenkins_Unsuccessful.png)
-
-**Initial Analysis of Failure:**
-
--     The two errors are related to a file not found and a command not found.  The command is py.test, and py stands for python.  There might be an issue with the python install.
-
-![Jenkins Output for Unsuccessful Build](Images/Jenkins_Output_Issues.png)
-
-**Analysis:**
--     From the output file, pip and py.test commands are not found.  Both commands are related to Python
-
-**Resolution:**
-
--     Reinstall Python in the Server, using the BASH commands to install PYTHON pacakage(s)
-
-****Successful Build:****
-
-![Jenkins Successful Build](Images/Jenkins_Success.png)
-
-****Confirmation Zip Files have been successfully generated:****
-
-![Jenkins Zip_File](Images/Jenkins_Confirmation_of_Zip_File.png)
 
 
 ## Step #5:  Secure Copy URL Shortner Application Files from the Jenkins Server to local desktop to be uploaded to the Production Server.  
