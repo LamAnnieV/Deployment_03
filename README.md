@@ -91,9 +91,10 @@ To test the webhook, the file https://github.com/LamAnnieV/Deployment_03/blob/ma
 ![URL Shortener](Images/Tested_Webhook.png)
             
 ## Areas for Optimization
--     Automate installs for Virtual Machines
--     Fully automate the Build and Test stage in Jenkins, from detecting an update in GitHub to sending the files to the Production Server+
--     Automate deploying the application to Production
+
+-     Furthur automate the installs to minimize manual input/entries
+  
+
   
 
   
