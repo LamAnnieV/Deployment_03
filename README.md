@@ -20,7 +20,7 @@ Github is the repository where Jenkins retrieve the files to build and test the 
 
 **Generate Token**
 
--     GitHub/Profile/Settings/Left Panel all the way on the bottom:  Developer Settings/Personal Access Tokens/Tokens (classic)/Generate New Token/Generate New Token (Claissic)/{Note:  Enter a note}/Check: Repo &  Admin:Repor_hook/Generate Token
+[Generate_GitHub_Token](Generate AWS Access Key and Secret](https://github.com/LamAnnieV/Setup_AWS/blob/main/Generate_AWS_CLI_Credentials.md))
 
 ## Step #3A Jenkins
 ### INSTRUCTIONS to SETUP a New EC2 Instance
