@@ -76,70 +76,7 @@ Jenkins is used to automate the Build, Test, and Zipping of the Application file
 
 In Jenkins create a build "Deployment02" for the URL Shortner application from GitHub Repository https://github.com/LamAnnieV/Run_Jenkins_Build_and_Deploy_to_EB_Deployment02.git and run the build
 
-
-
-
-## Step #5:  Secure Copy URL Shortner Application Files from the Jenkins Server to local desktop to be uploaded to the Production Server.  
-
-****Deploying the application that is from the Jenkins server will****
-1.  Ensure the application being deployed is the same as the application that was built and tested in Jenkins
-2.  If there are any issues with the deployment, there are test results from Jenkins that can be referenced
-
-### Before secure copying the files from the virtual machine to the local machine, a SSH Tunnel is required
-
-**How to create a SSH Tunnel:**
-
-1.  Get the public key from local machine
-   
-     In the local machine's command line:
-    
-     -   $ssh-keygen
-     -   $cd path_where the id_rsa.pub_is_located
-     -   $cat id_rsa.pub
-     -    Copy the public key
-  
-2.  Pass the key to the Virtual Machines's autherized_keys file
-
-     In the Jenkins server command line:
-
-     -   $cd ~
-     -   $cd .ssh
-     -   $sudo nano authorized_keys
-     -    Paste the public key from your local machine into the virtual machines's authorized_keys file, save, and exit
-
-**BASH command to secure copy files from a remote Ubuntu server to local machine via SSH tunnel** 
-
--   $scp ubuntu@insert_ip_address_here:insert_absolute_directory_path_here/insert_file_name_here_including_extention .
-   
-
-## Step #6:  Deploy Application to AWS ELASTIC BEANSTALK
-
-**Create EC2 Role**
-
--     AWS/IAM/Roles/Create Role/Select:  AWS Service/[Use Case] Select:  EC2/Next
--     [Permissions Policies] Select:   "AWSElasticBeanstalkWebTier" & “AWSElasticBeanstalkWorkerTier”/Next
--     Role Name:  Elastic-EC2/Create Role
-
-**Create EBS Role**
-
--     AWS/IAM/Roles/Create Role/Select:  AWS Service/[Use Case] Use Cases for other AWS services:  Elastic Beanstalk/Select:  Elastic Beanstalk - Customizable/Next
--     Next
--     Role Name:  aws-elasticbeanstalk-service-role/Create Role
-
-**Deploy URL Shortner Application to Elastic Beanstalk**
-
--     AWS/Elastic Beanstalk/Environments/Create Environment/Application Name:/[Platform-4] Platform:  Python/Platform Branch:  Python 3.9 running on 64bit Amazon Linux 2023/Select:  Upload Your code/Version Label:  v#/Select: Local File/Choose File:  {files that were downloaded from the Jenkins Server, Unzipped, then rezipped}/Next
--     [EC2 instance profile] Select:  Elastic-EC2/Next
--     [Virtual Private Cloud] Select:  default VPC/[Instance Subnets] Select:  us-east-1a/Next
--     [Instances] Root Volume Type:  General Purpose (SSD)/Size:  10/[Capacity] Instance Types:  Deselect all & Select t2.micro/Next
--     Next
--     Submit
-  
-**Successful**
-
-![URL Shortener Successfully Deployed](Images/EBS_Results.png)
- 
-## Step #7:  Launch Website
+## Step #4:  Launch Website
 
 ![URL Shortener Successfully Deployed](Images/URL_Shortner.png)
             
