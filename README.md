@@ -18,9 +18,7 @@ Previously, the URL Shortener was manually deployed using AWS Elastic Beanstack.
 
 Github is the repository where Jenkins retrieve the files to build, test, and deploy the URL Shortener application.  In order for the EC2, where Jenkins is installed, to get access to the repository a token needs to be generated from the GitHub and passed to the EC2.
 
-**Generate Token**
-
-[Generate GitHub Token]([https://github.com/LamAnnieV/GitHub/blob/main/Generate_GitHub_Token.md)
+[Generate GitHub Token](https://github.com/LamAnnieV/GitHub/blob/main/Generate_GitHub_Token.md)
 
 ## Step #3A Jenkins
 
