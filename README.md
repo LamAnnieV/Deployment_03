@@ -30,24 +30,15 @@ In Jenkins create a build "Deployment02" for the URL Shortner application from G
 
 ### [Generate AWS Access Key and Secret](https://github.com/LamAnnieV/Setup_AWS/blob/main/Generate_AWS_CLI_Credentials.md)
 
-### INSTRUCTIONS for INSTALLS for the Staging server ran on Ubuntu OS in AWS
+### [Create IAM Roles for Elastic Beanstalk and EC2](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
 
-### BASH commands to install JAVA pacakage(s):
--   $sudo apt update   
--   $sudo apt-get install fontconfig openjdk-17-jre
+## INSTRUCTIONS for INSTALLS in the Instance
 
-### BASH commands to install JENKINS pacakage(s):  
-Official Instaltion Instructions can be found here: https://pkg.jenkins.io/debian/
--   $curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
--   $echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] tps://pkg.jenkins.io/debian binary/ | sudo tee tc/apt/sources.list.d/jenkins.list > /dev/null
--   $sudo apt update
--   $sudo apt-get install jenkins
--   $sudo systemctl start jenkins
--   $sudo systemctl status jenkins
-
-### BASH commands to install PYTHON pacakage(s):
--   $sudo apt update
--   $sudo apt install python3.10-venv
+### [Install Jenkins](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
+### [Install "python3.10-venv", "python-pip", "python3-pip" and "unzip"](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
+### [Install CLI](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
+### [Install AWS EB CLI Part I](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
+### [Install AWS EB CLI Part II](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
 
 ### Results
 
