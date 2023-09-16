@@ -40,9 +40,10 @@ Github is the repository where Jenkins retrieve the files to build, test, and de
 
 [Create Jenkins Multibranch Pipeline Build](https://github.com/LamAnnieV/Jenkins/blob/main/Jenkins_Multibranch_Pipeline_Build.md)
 
-### Results:  Build and Test was successful
+### Result:  Build and Test was successful
 
-[Jenkins 1st Build:  See #1](https://github.com/LamAnnieV/Jenkins/blob/main/Jenkins_Multibranch_Pipeline_Build.md)
+![Jenkins Successful Build: See Run #1](Images/Jenkins_Success.png)
+
 ## Step #3B AWS EB CLI
 
 [Create a New Instance](https://github.com/LamAnnieV/Setup_AWS/blob/main/Generate_AWS_CLI_Credentials.md)
