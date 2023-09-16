@@ -22,6 +22,10 @@ Github is the repository where Jenkins retrieve the files to build, test, and de
 
 ## Step #3A Jenkins
 
+Jenkins is used to automate the Build, Test, and Deploy the URL Shortner Application.  To use Jenkins in a new EC2, all the proper installs to use Jenkins and to read the programing lanuague that the application is written in needs to be installed. In this case, they are Jenkins, Java, Python, and Jenkins additional plugin "Pipeline Utility Steps".
+
+In Jenkins create a build "Deployment_03" for the URL Shortner application from GitHub Repository https://github.com/LamAnnieV/Deployment_03 and run the build
+
 **Instructions to Setup a New EC2 Instance**
 
 [Create EC2 Instance](https://github.com/LamAnnieV/Create_EC2_Instance/blob/main/Create_EC2_Instance.md)
@@ -75,9 +79,7 @@ Github is the repository where Jenkins retrieve the files to build, test, and de
 
 and Step #4:  Use Jenkins to Auto Build and Auto Test Application
 
-Jenkins is used to automate the Build, Test, and Zipping of the Application files that are need in the deployment stage.  To use Jenkins in a new EC2, all the proper installs to use Jenkins and to read the programing lanuague that the application is written in needs to be installed. In this case, they are Jenkins, Java, Python, and Jenkins additional plugin "Pipeline Utility Steps".
 
-In Jenkins create a build "Deployment02" for the URL Shortner application from GitHub Repository https://github.com/LamAnnieV/Run_Jenkins_Build_and_Deploy_to_EB_Deployment02.git and run the build
 
 ## Step #4:  Launch Website
 
