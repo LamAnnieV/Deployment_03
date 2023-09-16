@@ -23,21 +23,22 @@ Github is the repository where Jenkins retrieve the files to build and test the 
 [Generate GitHub Token](https://github.com/LamAnnieV/Setup_AWS/blob/main/Generate_AWS_CLI_Credentials.md)
 
 ## Step #3A Jenkins
-**INSTRUCTIONS to SETUP a New EC2 Instance**
+**Instructions to SETUP a New EC2 Instance**
 [Generate AWS Access Key and Secret](https://github.com/LamAnnieV/Setup_AWS/blob/main/Generate_AWS_CLI_Credentials.md)
 
 [Create IAM Roles for Elastic Beanstalk and EC2](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
 
-**INSTRUCTIONS for INSTALLS in the Instance**
+**Shell Scripts for INSTALLS in the Instance**
 [Install Jenkins](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
 
 [Install "python3.10-venv", "python-pip", "python3-pip" and "unzip"](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
 
-**INSTRUCTIONS for Jenkins Setup**
+**Instructions for Jenkins Setup**
 [Jenkins Setup](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
 
 [Install "Pipeline Utility Step" Plugin](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
 
+### Results
 
 ## Step #3B AWS EB CLI
 [Create a New Instance](https://github.com/LamAnnieV/Setup_AWS/blob/main/Generate_AWS_CLI_Credentials.md)
