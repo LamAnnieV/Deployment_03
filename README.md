@@ -66,31 +66,25 @@ The Jenkins file was edited to include a Deploy stage.
 
 ![Jenkins Successful Build: See Run #1](Images/Jenkins_Success.png)
 
-### URL Shortener Deployed
+### Lanch URL Shortener Website
 
 ![URL Shortener](Images/URL_Shortener.png)
 
 ## Step #3C Webhook
 
-[Install GitHub Webhook](https://github.com/LamAnnieV/Setup_AWS/blob/main/Create_AWS_IAM_Roles.md)
+In step #3A and #3B, when there is commit in GitHub, the "Run Build" still needs to be manually ran.  To automate this process, a GitHub Webhook was configured.  When there is a commit in the GitHub Repository, it pushes it to Jenkins in this case and automatically runs the Build.
 
-### Results
+[Congigure GitHub Webhook](https://github.com/LamAnnieV/GitHub/blob/main/Configure_GitHub_Webhook.md)
 
-****Successful Build:****
+### Result:  Build and Test was successful, see run #3
 
-![Jenkins Successful Build](Images/Jenkins_Success.png)
+![Jenkins Successful Build: See Run #1](Images/Jenkins_Success.png)
 
-****Successful Build:****
+### Lanch URL Shortener Website
 
-![Jenkins Successful Build](Images/Jenkins_Success.png)
-
-and Step #4:  Use Jenkins to Auto Build and Auto Test Application
+![URL Shortener](Images/URL_Shortener.png)
 
 
-
-## Step #4:  Launch Website
-
-![URL Shortener Successfully Deployed](Images/URL_Shortner.png)
             
 ## Areas for Optimization
 -     Automate installs for Virtual Machines
