@@ -89,7 +89,7 @@ AWS EB CLI Install**
 
 ### Jenkins Build #3: Webhook was configured in GitHub and base.html file was edited to test the Webhook, which should auto "Run Build" in Jenkins
 
-In Jenkins Build #1 and #2, when there is commit in GitHub, the "Run Build" still needs to be manually ran.  To automate this process, a GitHub Webhook was configured.  When there is a commit in the GitHub Repository, it pushes it to Jenkins in this case and automatically runs the Build.
+In Jenkins Build #1 and #2, when there is commit in GitHub, the "Run Build" still needs to be manually ran.  To automate this process, a GitHub Webhook was configured.  When there is a commit in the GitHub Repository, the webhook pushes the files to Jenkins and automatically runs the Build.
 
 To test the webhook, the file https://github.com/LamAnnieV/Deployment_03/blob/main/templates/base.html was edited to change "URL Shortner" to "URL Shrinker"
 
