@@ -12,7 +12,7 @@ Previously, the URL Shortener was manually deployed using AWS Elastic Beanstack.
 
 ## Step #1 Map Out the Deployment
 
-[Deployment Flowchart](Images/Deployment_Pipeline.png)
+![Deployment Flowchart](Images/Deployment_Pipeline.png)
 
 ## Step #2 Download Repository to GitHub
 
