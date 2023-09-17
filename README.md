@@ -60,8 +60,8 @@ Jenkins is used to automate the Build, Test, and Deploy the URL Shortner Applica
 **AWS EB CLI**
 
 In Deployment #2, the URL Shortener was manually deployed via AWS Elastic Beanstalk.  In this deployment, AWS CLI and AWS EB CLI was installed to automate the deployment of the URL Shortner.
-**
-AWS EB CLI Install**
+
+**AWS EB CLI Install**
 
 [Generate AWS CLI Credentials](https://github.com/LamAnnieV/Setup_AWS/blob/main/Generate_AWS_CLI_Credentials.md)
 
