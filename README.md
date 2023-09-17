@@ -84,7 +84,7 @@ To test the webhook, the file https://github.com/LamAnnieV/Deployment_03/blob/ma
 
 ### Result:  Build and Test was successful, see run #4
 
-![Jenkins Successful Build: See Run #1](Images/Jenkins_Success.png)
+![Jenkins Successful Build](Images/Jenkins_Webhook.png)
 
 ### Launch URL Shortener Website
 
