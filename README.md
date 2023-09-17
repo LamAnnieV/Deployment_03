@@ -28,7 +28,7 @@ When there is commit in GitHub, the "Run Build" still needs to be manually ran. 
 
 [Configure GitHub Webhook](https://github.com/LamAnnieV/GitHub/blob/main/Configure_GitHub_Webhook.md)
 
-## Step #3 Jenkins & AWS ELastic Beanstalk CLI
+## Step #3 Setup Instances, Install Jenkins, Install AWS ELastic Beanstalk CLI
 
 **Jenkins**
 Jenkins is used to automate the Build, Test, and Deploy the URL Shortner Application.  To use Jenkins in a new EC2, all the proper installs to use Jenkins and to read the programing lanuague that the application is written in needs to be installed. In this case, they are Jenkins, Java, Python, and Jenkins additional plugin "Pipeline Utility Steps".
