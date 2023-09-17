@@ -24,11 +24,10 @@ Github is the repository where Jenkins retrieve the files to build, test, and de
 
 When there is commit in GitHub, the "Run Build" still needs to be manually ran.  To automate this process, a GitHub Webhook was configured.  When there is a commit in the GitHub Repository, The webhook pushes the files to Jenkins and automatically runs the Build.
 
-## Step #3 Jenkins
+## Step #3 Jenkins & AWS ELastic Beanstalk CLI
 
+**Jenkins**
 Jenkins is used to automate the Build, Test, and Deploy the URL Shortner Application.  To use Jenkins in a new EC2, all the proper installs to use Jenkins and to read the programing lanuague that the application is written in needs to be installed. In this case, they are Jenkins, Java, Python, and Jenkins additional plugin "Pipeline Utility Steps".
-
-In Jenkins create a build "Deployment_03" for the URL Shortner application from GitHub Repository https://github.com/LamAnnieV/Deployment_03 and run the build
 
 **Instructions to Setup a New EC2 Instance**
 
@@ -48,15 +47,17 @@ In Jenkins create a build "Deployment_03" for the URL Shortner application from 
 
 [Create Jenkins Multibranch Pipeline Build](https://github.com/LamAnnieV/Jenkins/blob/main/Jenkins_Multibranch_Pipeline_Build.md)
 
-### Result:  Build and Test was successful, see run #1
+### Jenkins Build #1:  In Jenkins create a build "Deployment_03" for the URL Shortner application from GitHub Repository https://github.com/LamAnnieV/Deployment_03 and run the build.  This build consist of two stages:  Build Stage and Test Stage
+
+**Result:  Build and Test was successful, see run #1**
 
 ![Jenkins Successful Build: See Run #1](Images/Jenkins_Success.png)
 
-## Step #3B AWS EB CLI
+**AWS EB CLI**
 
 In Deployment #2, the URL Shortener was manually deployed via AWS Elastic Beanstalk.  In this deployment, AWS CLI and AWS EB CLI was installed to automate the deployment of the URL Shortner.
-
-The Jenkins file was edited to include a Deploy stage.
+**
+AWS EB CLI Install**
 
 [Generate AWS CLI Credentials](https://github.com/LamAnnieV/Setup_AWS/blob/main/Generate_AWS_CLI_Credentials.md)
 
@@ -66,7 +67,9 @@ The Jenkins file was edited to include a Deploy stage.
 
 [Scropt to Install AWS EB CLI Part II](https://github.com/LamAnnieV/Instance_Installs/blob/main/04B_AWS_EB_CLI_install.sh)
 
-### Result:  Build and Test was successful, see run #3
+### Jenkins Build #2:The Jenkins file was edited to include a "Deploy" stage, which deploys the URL shortener.
+
+**Result:  Build and Test was successful, see run #3**
 
 ![Jenkins Successful Build: See Run #1](Images/Jenkins_Success.png)
 
