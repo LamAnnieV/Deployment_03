@@ -24,6 +24,10 @@ Github is the repository where Jenkins retrieve the files to build, test, and de
 
 When there is commit in GitHub, the "Run Build" still needs to be manually ran.  To automate this process, a GitHub Webhook was configured.  When there is a commit in the GitHub Repository, The webhook pushes the files to Jenkins and automatically runs the Build.
 
+**To configure GitHub Webhook**
+
+[Configure GitHub Webhook](https://github.com/LamAnnieV/GitHub/blob/main/Configure_GitHub_Webhook.md)
+
 ## Step #3 Jenkins & AWS ELastic Beanstalk CLI
 
 **Jenkins**
@@ -65,7 +69,13 @@ AWS EB CLI Install**
 
 [Script to Install AWS EB CLI Part I](https://github.com/LamAnnieV/Instance_Installs/blob/main/04A_AWS_EB_CLI_install.sh)
 
-[Scropt to Install AWS EB CLI Part II](https://github.com/LamAnnieV/Instance_Installs/blob/main/04B_AWS_EB_CLI_install.sh)
+[Script to Install AWS EB CLI Part II](https://github.com/LamAnnieV/Instance_Installs/blob/main/04B_AWS_EB_CLI_install.sh)
+
+[Script to Install AWS EB CLI Part II](https://github.com/LamAnnieV/Instance_Installs/blob/main/04C_AWS_EB_CLI_install.sh)
+
+**After installing the AWS EB CLI the application URL was displayed:**
+
+![Application URL](Images/URL_Website.png)
 
 ### Jenkins Build #2:The Jenkins file was edited to include a "Deploy" stage, which deploys the URL shortener.
 
@@ -73,21 +83,15 @@ AWS EB CLI Install**
 
 ![Jenkins Successful Build: See Run #1](Images/Jenkins_Success.png)
 
-### After installing the AWS EB CLI the application URL was displayed:
-
-![Application URL](Images/Where the appliation will be available.png)
-
-### Launch URL Shortener Website
+**Launch URL Shortener Website**
 
 ![URL Shortener](Images/URL_Shortener.png)
 
-## Step #3C Webhook
+### Jenkins Build #3: Webhook was configured in GitHub and base.html file was edited to test the Webhook, which should auto "Run Build" in Jenkins
 
-In step #3A and #3B, when there is commit in GitHub, the "Run Build" still needs to be manually ran.  To automate this process, a GitHub Webhook was configured.  When there is a commit in the GitHub Repository, it pushes it to Jenkins in this case and automatically runs the Build.
+In Jenkins Build #1 and #2, when there is commit in GitHub, the "Run Build" still needs to be manually ran.  To automate this process, a GitHub Webhook was configured.  When there is a commit in the GitHub Repository, it pushes it to Jenkins in this case and automatically runs the Build.
 
 To test the webhook, the file https://github.com/LamAnnieV/Deployment_03/blob/main/templates/base.html was edited to change "URL Shortner" to "URL Shrinker"
-
-[Configure GitHub Webhook](https://github.com/LamAnnieV/GitHub/blob/main/Configure_GitHub_Webhook.md)
 
 ### Result:  Build and Test was successful, see run #4
 
@@ -99,11 +103,12 @@ To test the webhook, the file https://github.com/LamAnnieV/Deployment_03/blob/ma
 
 ## Issue(s): 
 
-There were issues fully installing the ADW EB CLI since it needed Python3-pip.  In this case in order to successfully install ADW EB CLI, Python3-pip needed to be installed beforehand.
+There was an issue installing the ADW EB CLI.  In this case in order to successfully install ADW EB CLI, Python3-pip needed to be installed beforehand.
             
 ## Area(s) for Optimization:
 
 -     Furthur automate the installs to minimize manual input/entries
+-     Monitor Systems and Application Files
   
 
   
