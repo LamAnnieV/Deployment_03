@@ -25,15 +25,7 @@ Github is the repository where Jenkins retrieve the files to build, test, and de
 
 [Generate GitHub Token](https://github.com/LamAnnieV/GitHub/blob/main/Generate_GitHub_Token.md)
 
-### Webhook
-
-When there is commit in GitHub, the "Run Build" still needs to be manually ran.  To automate this process, a GitHub Webhook was configured.  When there is a commit in the GitHub Repository, The webhook pushes the files to Jenkins and automatically runs the Build.
-
-**To configure GitHub Webhook**
-
-[Configure GitHub Webhook](https://github.com/LamAnnieV/GitHub/blob/main/Configure_GitHub_Webhook.md)
-
-## Step #3 Setup EC2 Instance, Install Jenkins, Install AWS ELastic Beanstalk CLI
+## Step #3 Setup EC2 Instance and Install Jenkins
 
 **Jenkins**
 Jenkins is used to automate the Build, Test, and Deploy the URL Shortner Application.  To use Jenkins in a new EC2, all the proper installs to use Jenkins and to read the programing lanuague that the application is written in needs to be installed. In this case, they are Jenkins, Java, Python, and Jenkins additional plugin "Pipeline Utility Steps".
@@ -62,7 +54,7 @@ Jenkins is used to automate the Build, Test, and Deploy the URL Shortner Applica
 
 ![Jenkins Successful Build: See Run #1](Images/Jenkins_Success.png)
 
-**AWS EB CLI**
+## Step #4 Install AWS ELastic Beanstalk CLI
 
 In Deployment #2, the URL Shortener was manually deployed via AWS Elastic Beanstalk.  In this deployment, AWS CLI and AWS EB CLI was installed to automate the deployment of the URL Shortner.
 
@@ -92,6 +84,14 @@ In Deployment #2, the URL Shortener was manually deployed via AWS Elastic Beanst
 
 ![URL Shortener](Images/URL_Shortener.png)
 
+## Step #4 Configure GitHub Webhook
+
+When there is commit in GitHub, the "Run Build" still needs to be manually ran.  To automate this process, a GitHub Webhook was configured.  When there is a commit in the GitHub Repository, The webhook pushes the files to Jenkins and automatically runs the Build.
+
+**To configure GitHub Webhook**
+
+[Configure GitHub Webhook](https://github.com/LamAnnieV/GitHub/blob/main/Configure_GitHub_Webhook.md)
+
 ### Jenkins Build #3: Webhook was configured in GitHub and base.html file was edited to test the Webhook, which should auto "Run Build" in Jenkins
 
 In Jenkins Build #1 and #2, when there is commit in GitHub, the "Run Build" still needs to be manually ran.  To automate this process, a GitHub Webhook was configured.  When there is a commit in the GitHub Repository, the webhook pushes the files to Jenkins and automatically runs the Build.
@@ -113,7 +113,7 @@ There was an issue installing the ADW EB CLI.  In this case in order to successf
 ## Area(s) for Optimization:
 
 -     Furthur automate the installs to minimize manual input/entries
--     Monitor Systems and Application Files
+-     Install and configure Monitoring for Systems and Application Files
   
 
   
