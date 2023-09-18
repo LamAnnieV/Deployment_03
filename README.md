@@ -14,6 +14,7 @@ For this depolyment:
 - After Jenkins is installed, run build for the Build and Test stage.  If an issue arises, the issue would be either related to the instance, the Jenkins install, or the files needed to run this build.
 - After AWS EB CLI is installed, run the build to include Build, Test, and Deploy stage. If an issue arises, the issue would be related either to the AWS EB CLI install, the Deploy stage edit made within the Jenkins file or the html files.
 - After the Github Webhook is configured, edit one of the .py files or the .html files and see if Jenkins auto "Run Build".  If an issue arises, the issue would be related to the configuration of the Webhook or the edit that was made in the .py or the .html file.
+- *Please note that all the installs and configurations can be done before running the first build.  However, it makes it more difficult to determine where the issue may be.
 
 ## Step #1 Map Out the Deployment
 
