@@ -99,7 +99,7 @@ When there is commit in GitHub, the "Run Build" still needs to be manually ran. 
 
 **Webhook Validated**
 
-[Webhook Validated](Images/webhook_response.png)
+![Webhook Validated](Images/webhook_response.png)
 
 ### Jenkins Build #3: Webhook was configured in GitHub and base.html file was edited to test the Webhook, which should auto "Run Build" in Jenkins
 
