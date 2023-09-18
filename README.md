@@ -109,7 +109,7 @@ To test the webhook, the file https://github.com/LamAnnieV/Deployment_03/blob/ma
 
 ## Issue(s): 
 
-There was an issue installing the ADW EB CLI.  In this case in order to successfully install ADW EB CLI, Python3-pip needed to be installed beforehand.
+- There was an issue installing the ADW EB CLI.  In this case in order to successfully install ADW EB CLI, Python3-pip needed to be installed beforehand.
             
 ## Area(s) for Optimization:
 
