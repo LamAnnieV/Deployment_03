@@ -113,8 +113,8 @@ There was an issue installing the ADW EB CLI.  In this case in order to successf
             
 ## Area(s) for Optimization:
 
--     Furthur automate the installs to minimize manual input/entries
--     Install and configure Monitoring for Systems and Application Files
+- Furthur automate the installs to minimize manual input/entries
+- Install and configure Monitoring for Systems and Application Files
   
 
   
