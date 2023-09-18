@@ -81,6 +81,10 @@ In Deployment #2, the URL Shortener was manually deployed via AWS Elastic Beanst
 
 ![Jenkins Successful Build: See Run #1](Images/Jenkins_Success.png)
 
+**Check EBS Health**
+
+![Check EBS Health](Images/EBS_Health.png)
+
 **Launch URL Shortener Website**
 
 ![URL Shortener](Images/URL_Shortener.png)
@@ -92,6 +96,10 @@ When there is commit in GitHub, the "Run Build" still needs to be manually ran. 
 **To configure GitHub Webhook**
 
 [Configure GitHub Webhook](https://github.com/LamAnnieV/GitHub/blob/main/Configure_GitHub_Webhook.md)
+
+**Webhook Validated**
+
+[Webhook Validated](Images/webhook_response.png)
 
 ### Jenkins Build #3: Webhook was configured in GitHub and base.html file was edited to test the Webhook, which should auto "Run Build" in Jenkins
 
