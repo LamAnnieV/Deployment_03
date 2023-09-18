@@ -9,10 +9,11 @@ By:  Annie V Lam - Kura Labs
 Automate Build, Test and Deploy URL Shortener Application in Stages
 
 Previously, the URL Shortener was manually deployed using AWS Elastic Beanstack.  This deployment, AWS Beanstalk CLI is used to automate the Deploy Stage and GitHub Webhook is used to fully automate Jenkins "Run Build".  For every major install, it is best practice to test it in order to isolate issue if an issue arise.  
+
 For this depolyment:  
--            After Jenkins is installed, run build for the Build and Test stage.  If an issue arises, the issue would be either related to the instance, the Jenkins install, or the files needed to run this build.
--            After AWS EB CLI is installed, run the build to include Build, Test, and Deploy stage. If an issue arises, the issue would be related either to the AWS EB CLI install, the Deploy stage edit made within the Jenkins file or the html files.
--            After the Github Webhook is configured, edit one of the .py files or the .html files and see if Jenkins auto "Run Build".  If an issue arises, the issue would be related to the configuration of the Webhook or the edit that was made in the .py or the .html file.
+- After Jenkins is installed, run build for the Build and Test stage.  If an issue arises, the issue would be either related to the instance, the Jenkins install, or the files needed to run this build.
+- After AWS EB CLI is installed, run the build to include Build, Test, and Deploy stage. If an issue arises, the issue would be related either to the AWS EB CLI install, the Deploy stage edit made within the Jenkins file or the html files.
+- After the Github Webhook is configured, edit one of the .py files or the .html files and see if Jenkins auto "Run Build".  If an issue arises, the issue would be related to the configuration of the Webhook or the edit that was made in the .py or the .html file.
 
 ## Step #1 Map Out the Deployment
 
