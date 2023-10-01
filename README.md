@@ -6,14 +6,14 @@ By:  Annie V Lam - Kura Labs
 
 # Purpose
 
-Automate Build, Test and Deploy URL Shortener Application in Stages
+Automate Build, Test, and Deploy URL Shortener Application in Stages
 
-Previously, the URL Shortener was manually deployed using AWS Elastic Beanstack.  This deployment, AWS Beanstalk CLI is used to automate the Deploy Stage and GitHub Webhook is used to fully automate Jenkins "Run Build".  For every major install, it is best practice to test it in order to isolate issue if an issue arise.  
+Previously, the URL Shortener was manually deployed using AWS Elastic Beanstack.  In this deployment, AWS Beanstalk CLI is used to automate the Deploy Stage, and GitHub Webhook is used to fully automate Jenkins "Run Build".  For every major install, it is best practice to test it in order to isolate issues if an issue arises.  
 
-For this depolyment:  
-- After Jenkins is installed, run build for the Build and Test stage.  If an issue arises, the issue would be either related to the instance, the Jenkins install, or the files needed to run this build.
-- After AWS EB CLI is installed, run the build to include Build, Test, and Deploy stage. If an issue arises, the issue would be related either to the AWS EB CLI install, the Deploy stage edit made within the Jenkins file or the html files.
-- After the Github Webhook is configured, edit one of the .py files or the .html files and see if Jenkins auto "Run Build".  If an issue arises, the issue would be related to the configuration of the Webhook or the edit that was made in the .py or the .html file.
+For this deployment:  
+- After Jenkins is installed, run a build for the Build and Test stage.  If an issue arises, the issue would be either related to the instance, the Jenkins install, or the files needed to run this build.
+- After AWS EB CLI is installed, run the build to include the Build, Test, and Deploy stage. If an issue arises, the issue would be related either to the AWS EB CLI install, the Deploy stage edit made within the Jenkins file, or the html files.
+- After the GitHub Webhook is configured, edit one of the .py files or the .html files and see if Jenkins auto "Run Build".  If an issue arises, the issue would be related to the configuration of the Webhook or the edit that was made in the .py or the .html file.
 - *Please note that all the installs and configurations can be done before running the first build.  However, if there is an issue, it makes it more difficult to troubleshoot.
 
 ## Step #1 Map Out the Deployment
@@ -22,14 +22,14 @@ For this depolyment:
 
 ## Step #2 Download Repository to GitHub
 
-Github is the repository where Jenkins retrieve the files to build, test, and deploy the URL Shortener application.  In order for the EC2, where Jenkins is installed, to get access to the repository a token needs to be generated from the GitHub and passed to the EC2.
+GitHub is the repository where Jenkins retrieves the files to build, test, and deploy the URL Shortener application.  In order for the EC2, where Jenkins is installed, to get access to the repository a token needs to be generated from the GitHub and passed to the EC2.
 
 [Generate GitHub Token](https://github.com/LamAnnieV/GitHub/blob/main/Generate_GitHub_Token.md)
 
 ## Step #3 Setup EC2 Instance and Install Jenkins
 
 **Jenkins**
-Jenkins is used to automate the Build, Test, and Deploy the URL Shortner Application.  To use Jenkins in a new EC2, all the proper installs to use Jenkins and to read the programing lanuague that the application is written in needs to be installed. In this case, they are Jenkins, Java, Python, and Jenkins additional plugin "Pipeline Utility Steps".
+Jenkins is used to automate the Build, Test, and Deploy the URL Shortener Application.  To use Jenkins in a new EC2, all the proper installs to use Jenkins and to read the programing language that the application is written in need to be installed. In this case, they are Jenkins, Java, Python, and Jenkins additional plugin "Pipeline Utility Steps".
 
 **Instructions to Setup a New EC2 Instance**
 
@@ -49,7 +49,7 @@ Jenkins is used to automate the Build, Test, and Deploy the URL Shortner Applica
 
 [Create Jenkins Multibranch Pipeline Build](https://github.com/LamAnnieV/Jenkins/blob/main/Jenkins_Multibranch_Pipeline_Build.md)
 
-### Jenkins Build #1:  In Jenkins create a build "Deployment_03" for the URL Shortner application from GitHub Repository https://github.com/LamAnnieV/Deployment_03 and run the build.  This build consist of two stages:  Build Stage and Test Stage
+### Jenkins Build #1:  In Jenkins create a build "Deployment_03" for the URL Shortener application from GitHub Repository https://github.com/LamAnnieV/Deployment_03 and run the build.  This build consists of two stages:  The build Stage and the Test Stage
 
 **Result:  Build and Test was successful, see run #1**
 
@@ -57,7 +57,7 @@ Jenkins is used to automate the Build, Test, and Deploy the URL Shortner Applica
 
 ## Step #4 Install AWS ELastic Beanstalk CLI
 
-In Deployment #2, the URL Shortener was manually deployed via AWS Elastic Beanstalk.  In this deployment, AWS CLI and AWS EB CLI was installed to automate the deployment of the URL Shortner.
+In Deployment #2, the URL Shortener was manually deployed via AWS Elastic Beanstalk.  In this deployment, AWS CLI and AWS EB CLI were installed to automate the deployment of the URL Shortener.
 
 **AWS EB CLI Install**
 
@@ -75,7 +75,7 @@ In Deployment #2, the URL Shortener was manually deployed via AWS Elastic Beanst
 
 ![Application URL](Images/URL_Website.png)
 
-### Jenkins Build #2:The Jenkins file was edited to include a "Deploy" stage, which deploys the URL shortener.
+### Jenkins Build #2:  The Jenkins file was edited to include a "Deploy" stage, which deploys the URL shortener.
 
 **Result:  Build and Test was successful, see run #3**
 
@@ -91,7 +91,7 @@ In Deployment #2, the URL Shortener was manually deployed via AWS Elastic Beanst
 
 ## Step #4 Configure GitHub Webhook
 
-When there is commit in GitHub, the "Run Build" still needs to be manually ran.  To automate this process, a GitHub Webhook was configured.  When there is a commit in the GitHub Repository, The webhook pushes the files to Jenkins and automatically runs the Build.
+When there is a commit in GitHub, the "Run Build" still needs to be manually ran.  To automate this process, a GitHub Webhook was configured.  When there is a commit in the GitHub Repository, The webhook pushes the files to Jenkins and automatically runs the Build.
 
 **To configure GitHub Webhook**
 
@@ -101,11 +101,11 @@ When there is commit in GitHub, the "Run Build" still needs to be manually ran. 
 
 ![Webhook Validated](Images/webhook_response.png)
 
-### Jenkins Build #3: Webhook was configured in GitHub and base.html file was edited to test the Webhook, which should auto "Run Build" in Jenkins
+### Jenkins Build #3: Webhook was configured in GitHub and the base.html file was edited to test the Webhook, which should auto "Run Build" in Jenkins
 
-In Jenkins Build #1 and #2, when there is commit in GitHub, the "Run Build" still needs to be manually ran.  To automate this process, a GitHub Webhook was configured.  When there is a commit in the GitHub Repository, the webhook pushes the files to Jenkins and automatically runs the Build.
+In Jenkins Build #1 and #2, when there is a commit in GitHub, the "Run Build" still needs to be manually ran.  To automate this process, a GitHub Webhook was configured.  When there is a commit in the GitHub Repository, the webhook pushes the files to Jenkins and automatically runs the Build.
 
-To test the webhook, the file https://github.com/LamAnnieV/Deployment_03/blob/main/templates/base.html was edited to change "URL Shortner" to "URL Shrinker"
+To test the webhook, the file https://github.com/LamAnnieV/Deployment_03/blob/main/templates/base.html was edited to change "URL Shortener" to "URL Shrinker"
 
 ### Result:  Build and Test was successful, see run #4
 
@@ -121,7 +121,7 @@ To test the webhook, the file https://github.com/LamAnnieV/Deployment_03/blob/ma
             
 ## Area(s) for Optimization:
 
-- Furthur automate the installs to minimize manual input/entries
+- Further automate the installs to minimize manual input/entries
 - Install and configure Monitoring for Systems and Application Files
   
 
